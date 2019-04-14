@@ -6,6 +6,7 @@ target 'ParentsJournal' do
   use_frameworks!
 
   # Pods for ParentsJournal
+  pod 'Firebase/Core'
 
   target 'ParentsJournalTests' do
     inherit! :search_paths
