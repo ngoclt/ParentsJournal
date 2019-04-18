@@ -27,17 +27,25 @@ class LaunchRouter: NSObject, LaunchRoutingLogic, LaunchDataPassing {
   // MARK: Routing
   
   func navigateToLogin(segue: UIStoryboardSegue?) {
-//    if let segue = segue {
-//      let destinationVC = segue.destination as! LoginViewController
-//      var destinationDS = destinationVC.router!.dataStore!
-//      passDataToLogin(source: dataStore!, destination: &destinationDS)
-//    } else {
-//      let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//      let destinationVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//      var destinationDS = destinationVC.router!.dataStore!
-//      passDataToLogin(source: dataStore!, destination: &destinationDS)
-//      navigateToLoginScreen(source: viewController!, destination: destinationVC)
-//    }
+    if let segue = segue {
+      guard let destinationVC = segue.destination as? LoginViewController else {
+          return
+      }
+      
+      guard var destinationDS = destinationVC.router?.dataStore else { return }
+      
+      passDataToLogin(source: dataStore!, destination: &destinationDS)
+    } else {
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      guard let destinationVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
+        return
+      }
+      
+      guard var destinationDS = destinationVC.router?.dataStore else { return }
+      
+      passDataToLogin(source: dataStore!, destination: &destinationDS)
+      navigateToLoginScreen(source: viewController!, destination: destinationVC)
+    }
   }
 
   // MARK: Navigation
