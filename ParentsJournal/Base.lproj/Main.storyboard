@@ -82,7 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WVj-iA-zaK"/>
                     <connections>
-                        <segue destination="8Ii-fO-iEb" kind="show" id="DuR-SH-NOL"/>
+                        <segue destination="8Ii-fO-iEb" kind="show" identifier="navigateToMainWithSegue" id="DuR-SH-NOL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,7 +122,7 @@
         <!--Launch View Controller-->
         <scene sceneID="HHj-1w-gv8">
             <objects>
-                <viewController id="3HR-78-ws0" customClass="LaunchViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchViewController" id="3HR-78-ws0" customClass="LaunchViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3v3-7I-U6O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
