@@ -7,8 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C9370F52263CA510032473A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9370F42263CA510032473A /* GoogleService-Info.plist */; };
 		4C9370F92263CBC90032473A /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9370F82263CBC90032473A /* AuthServices.swift */; };
+		4CD7DD3D22686C0A007B1302 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */; };
+		4CD7DD3E22686C0A007B1302 /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */; };
+		4CD7DD3F22686C0A007B1302 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */; };
+		4CD7DD4022686C0A007B1302 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2F22686C0A007B1302 /* SFUIText-Bold.ttf */; };
+		4CD7DD4122686C0A007B1302 /* Ubuntu-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3022686C0A007B1302 /* Ubuntu-M.ttf */; };
+		4CD7DD4222686C0A007B1302 /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3122686C0A007B1302 /* SFUIText-Light.ttf */; };
+		4CD7DD4322686C0A007B1302 /* Ubuntu-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3222686C0A007B1302 /* Ubuntu-L.ttf */; };
+		4CD7DD4422686C0A007B1302 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3322686C0A007B1302 /* Ubuntu-BI.ttf */; };
+		4CD7DD4522686C0A007B1302 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3422686C0A007B1302 /* Quicksand-Medium.ttf */; };
+		4CD7DD4622686C0A007B1302 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3522686C0A007B1302 /* Quicksand-Regular.ttf */; };
+		4CD7DD4722686C0A007B1302 /* Ubuntu-MI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3622686C0A007B1302 /* Ubuntu-MI.ttf */; };
+		4CD7DD4822686C0A007B1302 /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3722686C0A007B1302 /* Ubuntu-R.ttf */; };
+		4CD7DD4922686C0A007B1302 /* Ubuntu-LI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3822686C0A007B1302 /* Ubuntu-LI.ttf */; };
+		4CD7DD4A22686C0A007B1302 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3922686C0A007B1302 /* Ubuntu-B.ttf */; };
+		4CD7DD4B22686C0A007B1302 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3A22686C0A007B1302 /* Quicksand-Light.ttf */; };
+		4CD7DD4C22686C0A007B1302 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3B22686C0A007B1302 /* Ubuntu-C.ttf */; };
+		4CD7DD4D22686C0A007B1302 /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD3C22686C0A007B1302 /* Ubuntu-RI.ttf */; };
 		4CF47DAE2263C76100A076A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF47DAD2263C76100A076A9 /* AppDelegate.swift */; };
 		4CF47DB32263C76100A076A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF47DB12263C76100A076A9 /* Main.storyboard */; };
 		4CF47DB52263C76600A076A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF47DB42263C76600A076A9 /* Assets.xcassets */; };
@@ -54,8 +70,24 @@
 		2947522A2FF0A2C29351717D /* Pods_ParentsJournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParentsJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		379DFF8E90244F9B7C4BF918 /* Pods-ParentsJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentsJournal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParentsJournal/Pods-ParentsJournal.debug.xcconfig"; sourceTree = "<group>"; };
 		4347A2DFE45C1925AF92DD5E /* Pods-ParentsJournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentsJournalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParentsJournalTests/Pods-ParentsJournalTests.release.xcconfig"; sourceTree = "<group>"; };
-		4C9370F42263CA510032473A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C9370F82263CBC90032473A /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		4CD7DD2F22686C0A007B1302 /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		4CD7DD3022686C0A007B1302 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-M.ttf"; sourceTree = "<group>"; };
+		4CD7DD3122686C0A007B1302 /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
+		4CD7DD3222686C0A007B1302 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		4CD7DD3322686C0A007B1302 /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BI.ttf"; sourceTree = "<group>"; };
+		4CD7DD3422686C0A007B1302 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		4CD7DD3522686C0A007B1302 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		4CD7DD3622686C0A007B1302 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MI.ttf"; sourceTree = "<group>"; };
+		4CD7DD3722686C0A007B1302 /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		4CD7DD3822686C0A007B1302 /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LI.ttf"; sourceTree = "<group>"; };
+		4CD7DD3922686C0A007B1302 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		4CD7DD3A22686C0A007B1302 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		4CD7DD3B22686C0A007B1302 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-C.ttf"; sourceTree = "<group>"; };
+		4CD7DD3C22686C0A007B1302 /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
 		4CF47DAA2263C76100A076A9 /* ParentsJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParentsJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF47DAD2263C76100A076A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF47DB22263C76100A076A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,11 +177,38 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		4C9370FC2263CC670032473A /* Entities */ = {
+		4CD7DD2A22686C0A007B1302 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4CD7DD2B22686C0A007B1302 /* fonts */,
 			);
-			path = Entities;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4CD7DD2B22686C0A007B1302 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */,
+				4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */,
+				4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */,
+				4CD7DD2F22686C0A007B1302 /* SFUIText-Bold.ttf */,
+				4CD7DD3022686C0A007B1302 /* Ubuntu-M.ttf */,
+				4CD7DD3122686C0A007B1302 /* SFUIText-Light.ttf */,
+				4CD7DD3222686C0A007B1302 /* Ubuntu-L.ttf */,
+				4CD7DD3322686C0A007B1302 /* Ubuntu-BI.ttf */,
+				4CD7DD3422686C0A007B1302 /* Quicksand-Medium.ttf */,
+				4CD7DD3522686C0A007B1302 /* Quicksand-Regular.ttf */,
+				4CD7DD3622686C0A007B1302 /* Ubuntu-MI.ttf */,
+				4CD7DD3722686C0A007B1302 /* Ubuntu-R.ttf */,
+				4CD7DD3822686C0A007B1302 /* Ubuntu-LI.ttf */,
+				4CD7DD3922686C0A007B1302 /* Ubuntu-B.ttf */,
+				4CD7DD3A22686C0A007B1302 /* Quicksand-Light.ttf */,
+				4CD7DD3B22686C0A007B1302 /* Ubuntu-C.ttf */,
+				4CD7DD3C22686C0A007B1302 /* Ubuntu-RI.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 			sourceTree = "<group>";
 		};
 		4CF47DA12263C76100A076A9 = {
@@ -177,7 +236,7 @@
 		4CF47DAC2263C76100A076A9 /* ParentsJournal */ = {
 			isa = PBXGroup;
 			children = (
-				4C9370FC2263CC670032473A /* Entities */,
+				4CD7DD2A22686C0A007B1302 /* Assets */,
 				4C9370F72263CB9C0032473A /* Services */,
 				4C9370F62263CB8B0032473A /* Scenes */,
 				4CF47DAD2263C76100A076A9 /* AppDelegate.swift */,
@@ -185,7 +244,6 @@
 				4CF47DB42263C76600A076A9 /* Assets.xcassets */,
 				4CF47DB62263C76600A076A9 /* LaunchScreen.storyboard */,
 				4CF47DB92263C76600A076A9 /* Info.plist */,
-				4C9370F42263CA510032473A /* GoogleService-Info.plist */,
 			);
 			path = ParentsJournal;
 			sourceTree = "<group>";
@@ -352,10 +410,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD7DD4022686C0A007B1302 /* SFUIText-Bold.ttf in Resources */,
+				4CD7DD4222686C0A007B1302 /* SFUIText-Light.ttf in Resources */,
+				4CD7DD4422686C0A007B1302 /* Ubuntu-BI.ttf in Resources */,
+				4CD7DD4B22686C0A007B1302 /* Quicksand-Light.ttf in Resources */,
 				4CF47DB82263C76600A076A9 /* LaunchScreen.storyboard in Resources */,
-				4C9370F52263CA510032473A /* GoogleService-Info.plist in Resources */,
 				4CF47DB52263C76600A076A9 /* Assets.xcassets in Resources */,
+				4CD7DD4522686C0A007B1302 /* Quicksand-Medium.ttf in Resources */,
+				4CD7DD4822686C0A007B1302 /* Ubuntu-R.ttf in Resources */,
 				4CF47DB32263C76100A076A9 /* Main.storyboard in Resources */,
+				4CD7DD4722686C0A007B1302 /* Ubuntu-MI.ttf in Resources */,
+				4CD7DD4A22686C0A007B1302 /* Ubuntu-B.ttf in Resources */,
+				4CD7DD4622686C0A007B1302 /* Quicksand-Regular.ttf in Resources */,
+				4CD7DD4C22686C0A007B1302 /* Ubuntu-C.ttf in Resources */,
+				4CD7DD3F22686C0A007B1302 /* SFUIText-Regular.ttf in Resources */,
+				4CD7DD4322686C0A007B1302 /* Ubuntu-L.ttf in Resources */,
+				4CD7DD4122686C0A007B1302 /* Ubuntu-M.ttf in Resources */,
+				4CD7DD4D22686C0A007B1302 /* Ubuntu-RI.ttf in Resources */,
+				4CD7DD3D22686C0A007B1302 /* Quicksand-Bold.ttf in Resources */,
+				4CD7DD4922686C0A007B1302 /* Ubuntu-LI.ttf in Resources */,
+				4CD7DD3E22686C0A007B1302 /* SFUIText-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
