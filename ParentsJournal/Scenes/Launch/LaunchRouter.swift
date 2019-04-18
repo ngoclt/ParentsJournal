@@ -14,7 +14,7 @@ import UIKit
 
 @objc protocol LaunchRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  func navigateToLogin(segue: UIStoryboardSegue?)
 }
 
 protocol LaunchDataPassing
@@ -29,32 +29,32 @@ class LaunchRouter: NSObject, LaunchRoutingLogic, LaunchDataPassing
   
   // MARK: Routing
   
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
+  func navigateToLogin(segue: UIStoryboardSegue?)
+  {
+    if let segue = segue {
+      let destinationVC = segue.destination as! LoginViewController
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToLogin(source: dataStore!, destination: &destinationDS)
+    } else {
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let destinationVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToLogin(source: dataStore!, destination: &destinationDS)
+      navigateToLoginScreen(source: viewController!, destination: destinationVC)
+    }
+  }
 
   // MARK: Navigation
   
-  //func navigateToSomewhere(source: LaunchViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
+  func navigateToLoginScreen(source: LaunchViewController, destination: LoginViewController)
+  {
+    source.show(destination, sender: nil)
+  }
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: LaunchDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+  func passDataToLogin(source: LaunchDataStore, destination: inout LoginDataStore)
+  {
+//    destination.name = source.name
+  }
 }

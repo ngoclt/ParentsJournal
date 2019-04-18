@@ -57,7 +57,7 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic
   override func prepare(for segue: UIStoryboardSegue, sender: Any?)
   {
     if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+      let selector = NSSelectorFromString("navigateTo\(scene)WithSegue:")
       if let router = router, router.responds(to: selector) {
         router.perform(selector, with: segue)
       }
@@ -71,6 +71,19 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic
     super.viewDidLoad()
     doSomething()
   }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+      super.viewDidAppear(animated)
+      DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+        guard let weakSelf = self else {
+          return
+        }
+        
+        weakSelf.router?.navigateToLogin(segue: nil)
+      }
+
+    }
   
   // MARK: Do something
   

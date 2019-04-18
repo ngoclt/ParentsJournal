@@ -100,7 +100,7 @@
 		4CD7DD5022687011007B1302 /* LaunchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchWorker.swift; sourceTree = "<group>"; };
 		4CD7DD5122687011007B1302 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
 		4CD7DD5222687011007B1302 /* LaunchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModels.swift; sourceTree = "<group>"; };
-		4CD7DD5322687011007B1302 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		4CD7DD5322687011007B1302 /* LaunchViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4CD7DD5422687011007B1302 /* LaunchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
 		4CD7DD5B22687179007B1302 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CD7DD5F22687390007B1302 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };

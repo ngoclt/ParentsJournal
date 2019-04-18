@@ -28,7 +28,27 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf1-2G-HXy" customClass="GradientView" customModule="ParentsJournal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVE-vF-UTx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
+                                    </scrollView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pl9-ru-ep7">
+                                        <rect key="frame" x="142.5" y="96" width="90" height="83"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pl9-ru-ep7" secondAttribute="height" multiplier="90:83" id="TKZ-Li-RG7"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zVE-vF-UTx" firstAttribute="top" secondItem="nf1-2G-HXy" secondAttribute="top" id="35t-3X-d21"/>
+                                    <constraint firstItem="Pl9-ru-ep7" firstAttribute="top" secondItem="nf1-2G-HXy" secondAttribute="top" constant="96" id="4Jl-u0-UaU"/>
+                                    <constraint firstItem="zVE-vF-UTx" firstAttribute="leading" secondItem="nf1-2G-HXy" secondAttribute="leading" id="9Zj-8j-QIm"/>
+                                    <constraint firstAttribute="bottom" secondItem="zVE-vF-UTx" secondAttribute="bottom" id="9mU-KY-bJZ"/>
+                                    <constraint firstItem="Pl9-ru-ep7" firstAttribute="width" secondItem="nf1-2G-HXy" secondAttribute="width" multiplier="90: 375" id="iCT-lI-seN"/>
+                                    <constraint firstAttribute="trailing" secondItem="zVE-vF-UTx" secondAttribute="trailing" id="sba-tN-Phz"/>
+                                    <constraint firstItem="Pl9-ru-ep7" firstAttribute="centerX" secondItem="nf1-2G-HXy" secondAttribute="centerX" id="z4S-gQ-yp5"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
                                         <color key="value" red="0.98039215686274506" green="0.31372549019607843" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -122,7 +142,7 @@
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="PGv-gh-ANE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="PGv-gh-ANE">
                                 <rect key="frame" x="139.5" y="245.5" width="96" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PGv-gh-ANE" secondAttribute="height" multiplier="1:1" id="Qui-2k-Fow"/>
@@ -145,7 +165,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="co3-t7-TF3"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="5Kh-7T-GbF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="navigateToLoginWithSegue" id="5Kh-7T-GbF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncq-L3-1aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,6 +174,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="96" height="96"/>
+        <image name="Icon" width="96" height="96"/>
+        <image name="Logo" width="86" height="81"/>
     </resources>
 </document>
