@@ -1,5 +1,5 @@
 //
-//  FirebaseRepository.swift
+//  AuthServices.swift
 //  ParentsJournal
 //
 //  Created by Ngoc Tuan Le on 4/14/19.
@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import Firebase
+
+class AuthServices {
+    
+    
+    func signIn(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            
+        }
+    }
+    
+}
