@@ -12,26 +12,22 @@
 
 import UIKit
 
-protocol LaunchBusinessLogic
-{
+protocol LaunchBusinessLogic {
   func doSomething(request: Launch.Something.Request)
 }
 
-protocol LaunchDataStore
-{
+protocol LaunchDataStore {
   //var name: String { get set }
 }
 
-class LaunchInteractor: LaunchBusinessLogic, LaunchDataStore
-{
+class LaunchInteractor: LaunchBusinessLogic, LaunchDataStore {
   var presenter: LaunchPresentationLogic?
   var worker: LaunchWorker?
   //var name: String = ""
   
   // MARK: Do something
   
-  func doSomething(request: Launch.Something.Request)
-  {
+  func doSomething(request: Launch.Something.Request) {
     worker = LaunchWorker()
     worker?.doSomeWork()
     

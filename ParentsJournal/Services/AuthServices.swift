@@ -11,9 +11,8 @@ import Firebase
 
 class AuthServices {
     
-    
     func signIn(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+        Auth.auth().signIn(withEmail: email, password: password) { _, _ in
             
         }
     }

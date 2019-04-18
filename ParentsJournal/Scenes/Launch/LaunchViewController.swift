@@ -12,34 +12,29 @@
 
 import UIKit
 
-protocol LaunchDisplayLogic: class
-{
+protocol LaunchDisplayLogic: class {
   func displaySomething(viewModel: Launch.Something.ViewModel)
 }
 
-class LaunchViewController: UIViewController, LaunchDisplayLogic
-{
+class LaunchViewController: UIViewController, LaunchDisplayLogic {
   var interactor: LaunchBusinessLogic?
   var router: (NSObjectProtocol & LaunchRoutingLogic & LaunchDataPassing)?
 
   // MARK: Object lifecycle
   
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-  {
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     setup()
   }
   
-  required init?(coder aDecoder: NSCoder)
-  {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setup()
   }
   
   // MARK: Setup
   
-  private func setup()
-  {
+  private func setup() {
     let viewController = self
     let interactor = LaunchInteractor()
     let presenter = LaunchPresenter()
@@ -54,8 +49,7 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic
   
   // MARK: Routing
   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-  {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let scene = segue.identifier {
       let selector = NSSelectorFromString("navigateTo\(scene)WithSegue:")
       if let router = router, router.responds(to: selector) {
@@ -66,14 +60,12 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic
   
   // MARK: View lifecycle
   
-  override func viewDidLoad()
-  {
+  override func viewDidLoad() {
     super.viewDidLoad()
     doSomething()
   }
     
-    override func viewDidAppear(_ animated: Bool)
-    {
+    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
       DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
         guard let weakSelf = self else {
@@ -89,14 +81,12 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic
   
   //@IBOutlet weak var nameTextField: UITextField!
   
-  func doSomething()
-  {
+  func doSomething() {
     let request = Launch.Something.Request()
     interactor?.doSomething(request: request)
   }
   
-  func displaySomething(viewModel: Launch.Something.ViewModel)
-  {
+  func displaySomething(viewModel: Launch.Something.ViewModel) {
     //nameTextField.text = viewModel.name
   }
 }
