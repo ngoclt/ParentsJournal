@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wdl-Xa-OFd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wdl-Xa-OFd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,7 +25,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf1-2G-HXy" customClass="GradientView" customModule="ParentsJournal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" red="0.98039215686274506" green="0.31372549019607843" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" red="1" green="0.78431372549019607" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nf1-2G-HXy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="55R-yj-For"/>
+                            <constraint firstItem="nf1-2G-HXy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AnG-Hc-3Ww"/>
+                            <constraint firstItem="nf1-2G-HXy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ar3-pI-f8m"/>
+                            <constraint firstItem="nf1-2G-HXy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="445:667" id="KwM-91-atJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="WVj-iA-zaK"/>
@@ -27,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="-63"/>
+            <point key="canvasLocation" x="492" y="-63.418290854572717"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="ivF-ig-L4Z">
@@ -52,12 +92,68 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NBa-nU-kfW"/>
+                        <segue destination="3HR-78-ws0" kind="relationship" relationship="rootViewController" id="Bds-H9-NwT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eo-nb-3jI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="-63"/>
+            <point key="canvasLocation" x="-1178" y="-63"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="HHj-1w-gv8">
+            <objects>
+                <viewController id="3HR-78-ws0" customClass="LaunchViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3v3-7I-U6O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVERYDAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd8-sB-Fv6">
+                                <rect key="frame" x="37" y="569.5" width="301" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="HEO-WK-ceU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memories jotted down." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBO-v5-Lxd">
+                                <rect key="frame" x="37" y="613.5" width="301" height="13.5"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="PGv-gh-ANE">
+                                <rect key="frame" x="139.5" y="245.5" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PGv-gh-ANE" secondAttribute="height" multiplier="1:1" id="Qui-2k-Fow"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dBO-v5-Lxd" firstAttribute="top" secondItem="Sd8-sB-Fv6" secondAttribute="bottom" constant="8" id="2UI-Uj-bwh"/>
+                            <constraint firstItem="dBO-v5-Lxd" firstAttribute="leading" secondItem="yDw-HF-ewK" secondAttribute="leading" constant="37" id="9PK-is-H5u"/>
+                            <constraint firstItem="Sd8-sB-Fv6" firstAttribute="leading" secondItem="yDw-HF-ewK" secondAttribute="leading" constant="37" id="AhM-NB-lbI"/>
+                            <constraint firstItem="PGv-gh-ANE" firstAttribute="centerY" secondItem="3v3-7I-U6O" secondAttribute="centerY" constant="-40" id="Ahg-VM-3kY"/>
+                            <constraint firstItem="yDw-HF-ewK" firstAttribute="bottom" secondItem="dBO-v5-Lxd" secondAttribute="bottom" constant="40" id="JFc-kX-wuU"/>
+                            <constraint firstItem="PGv-gh-ANE" firstAttribute="centerX" secondItem="3v3-7I-U6O" secondAttribute="centerX" id="f9E-sl-u2F"/>
+                            <constraint firstItem="yDw-HF-ewK" firstAttribute="trailing" secondItem="dBO-v5-Lxd" secondAttribute="trailing" constant="37" id="uai-iS-zRm"/>
+                            <constraint firstItem="yDw-HF-ewK" firstAttribute="trailing" secondItem="Sd8-sB-Fv6" secondAttribute="trailing" constant="37" id="zkV-rf-KER"/>
+                            <constraint firstItem="PGv-gh-ANE" firstAttribute="width" secondItem="3v3-7I-U6O" secondAttribute="width" multiplier="96:375" id="zvc-3b-p19"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yDw-HF-ewK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="co3-t7-TF3"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="5Kh-7T-GbF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ncq-L3-1aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342" y="-63"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="96" height="96"/>
+    </resources>
 </document>
