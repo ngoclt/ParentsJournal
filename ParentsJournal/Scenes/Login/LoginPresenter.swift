@@ -27,6 +27,6 @@ class LoginPresenter: LoginPresentationLogic {
   }
   
   func presentMainScreen(response: Login.Something.Response) {
-    
+    viewController?.openMainScreen()
   }
 }

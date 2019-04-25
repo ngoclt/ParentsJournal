@@ -13,16 +13,18 @@
 import UIKit
 
 protocol MainPresentationLogic {
-  func presentSomething(response: Main.Something.Response)
+  func setupView()
+  func presentNewPostScreen()
 }
 
 class MainPresenter: MainPresentationLogic {
   weak var viewController: MainDisplayLogic?
   
-  // MARK: Do something
+  func setupView() {
+    viewController?.setupView()
+  }
   
-  func presentSomething(response: Main.Something.Response) {
-    let viewModel = Main.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+  func presentNewPostScreen() {
+    viewController?.openNewPostScreen()
   }
 }

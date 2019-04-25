@@ -13,10 +13,14 @@
 import UIKit
 
 protocol MainDisplayLogic: class {
-  func displaySomething(viewModel: Main.Something.ViewModel)
+  func setupView()
+  func openNewPostScreen()
 }
 
-class MainViewController: UIViewController, MainDisplayLogic {
+class MainViewController: UITabBarController {
+  private static let RAISED_BUTTON_SIZE: CGFloat = 68
+  private static let RAISED_BUTTON_MARGIN: CGFloat = 8
+  
   var interactor: MainBusinessLogic?
   var router: (NSObjectProtocol & MainRoutingLogic & MainDataPassing)?
 
@@ -51,7 +55,7 @@ class MainViewController: UIViewController, MainDisplayLogic {
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+      let selector = NSSelectorFromString("navigateTo\(scene)WithSegue:")
       if let router = router, router.responds(to: selector) {
         router.perform(selector, with: segue)
       }
@@ -60,21 +64,56 @@ class MainViewController: UIViewController, MainDisplayLogic {
   
   // MARK: View lifecycle
   
+  var raisedButton: UIButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    doSomething()
+    interactor?.setupView()
+  }
+}
+
+extension MainViewController: MainDisplayLogic {
+    
+  func setupView() {
+    self.delegate = self
+    
+    let buttonSize = MainViewController.RAISED_BUTTON_SIZE
+    
+    raisedButton = UIButton(type: .custom)
+    raisedButton.setImage(UIImage(named: "ButtonAdd"), for: .normal)
+    raisedButton.frame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
+    raisedButton.translatesAutoresizingMaskIntoConstraints = false
+    
+    raisedButton.addTarget(self, action: #selector(didTapOnRaisedButton), for: .touchUpInside)
+    
+    view.insertSubview(raisedButton, aboveSubview: tabBar)
+    
+    let guide = view.safeAreaLayoutGuide
+    raisedButton.centerXAnchor.constraint(equalTo: guide.centerXAnchor).isActive = true
+    raisedButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -MainViewController.RAISED_BUTTON_MARGIN).isActive = true
+    raisedButton.heightAnchor.constraint(equalToConstant: buttonSize).isActive = true
+    raisedButton.widthAnchor.constraint(equalToConstant: buttonSize).isActive = true
   }
   
-  // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
-  
-  func doSomething() {
-    let request = Main.Something.Request()
-    interactor?.doSomething(request: request)
+  func openNewPostScreen() {
+    router?.navigateToNewPost(segue: nil)
   }
   
-  func displaySomething(viewModel: Main.Something.ViewModel) {
-    //nameTextField.text = viewModel.name
+  @objc func didTapOnRaisedButton() {
+    openNewPostScreen()
   }
+}
+
+extension MainViewController: UITabBarControllerDelegate {
+    
+    func tabBarController(_ tabBarController: UITabBarController,
+                          shouldSelect viewController: UIViewController) -> Bool {
+        
+        if viewController.isKind(of: NewPostViewController.self) {
+            router?.navigateToNewPost(segue: nil)
+            return false
+        }
+        
+        return true
+    }
 }

@@ -14,6 +14,7 @@ import UIKit
 
 protocol LoginDisplayLogic: class {
   func setupView()
+  func openMainScreen()
 }
 
 class LoginViewController: UIViewController, LoginDisplayLogic {
@@ -91,5 +92,9 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
   func setupView() {
     gradientView.topColor = UIColor(hex: "#FFC86E") ?? .yellow
     gradientView.bottomColor = UIColor(hex: "#FA508C") ?? .orange
+  }
+  
+  func openMainScreen() {
+    router?.navigateToMain(segue: nil)
   }
 }

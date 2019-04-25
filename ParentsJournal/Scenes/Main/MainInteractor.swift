@@ -13,25 +13,28 @@
 import UIKit
 
 protocol MainBusinessLogic {
-  func doSomething(request: Main.Something.Request)
+  func setupView()
+  func onTapButtonAdd()
 }
 
 protocol MainDataStore {
   //var name: String { get set }
 }
 
-class MainInteractor: MainBusinessLogic, MainDataStore {
+class MainInteractor: MainDataStore {
   var presenter: MainPresentationLogic?
   var worker: MainWorker?
   //var name: String = ""
+}
+
+extension MainInteractor: MainBusinessLogic {
   
-  // MARK: Do something
+  func setupView() {
+    presenter?.setupView()
+  }
   
-  func doSomething(request: Main.Something.Request) {
-    worker = MainWorker()
-    worker?.doSomeWork()
-    
-    let response = Main.Something.Response()
-    presenter?.presentSomething(response: response)
+  
+  func onTapButtonAdd() {
+    presenter?.presentNewPostScreen()
   }
 }

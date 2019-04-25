@@ -285,27 +285,101 @@
                     <navigationItem key="navigationItem" id="WVj-iA-zaK"/>
                     <connections>
                         <outlet property="gradientView" destination="nf1-2G-HXy" id="WCT-9C-mK6"/>
-                        <segue destination="8Ii-fO-iEb" kind="show" identifier="navigateToMainWithSegue" id="DuR-SH-NOL"/>
+                        <segue destination="pwj-yN-kwf" kind="show" identifier="navigateToMainWithSegue" id="N5Z-iI-p47"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="-63.418290854572717"/>
+            <point key="canvasLocation" x="662" y="-837"/>
         </scene>
-        <!--Main View Controller-->
-        <scene sceneID="ivF-ig-L4Z">
+        <!--View Controller-->
+        <scene sceneID="heH-nL-hqA">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="8Ii-fO-iEb" customClass="MainViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="n9l-Qp-tg1">
+                <viewController id="fJf-6x-xit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPG-lz-Twq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="0LW-kt-yDx"/>
+                        <viewLayoutGuide key="safeArea" id="v7P-Ua-rTc"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="IconCalendar" selectedImage="HighlightedIconCalendar" id="IEf-lc-rDv" customClass="TabBarItem" customModule="ParentsJournal" customModuleProvider="target"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jFk-3F-Kf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN9-up-Uri" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="-63"/>
+            <point key="canvasLocation" x="2726" y="83"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="as5-G7-KLs">
+            <objects>
+                <viewController id="MXM-vH-zmc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxE-KY-GDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CBW-cZ-xmA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="IconProfile" selectedImage="HighlightedIconProfile" id="r53-Xi-kLH" customClass="TabBarItem" customModule="ParentsJournal" customModuleProvider="target"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpQ-Hi-elB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="943"/>
+        </scene>
+        <!--New Post View Controller-->
+        <scene sceneID="37d-ff-Qg0">
+            <objects>
+                <viewController storyboardIdentifier="NewPostViewController" id="Tbp-2P-v67" customClass="NewPostViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="erB-Cu-61y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dm7-s8-qLO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="P5a-Vm-zLy" customClass="TabBarItem" customModule="ParentsJournal" customModuleProvider="target">
+                        <inset key="imageInsets" minX="0.0" minY="-10" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jiv-Vc-zBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="942"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L1s-mI-UFa">
+            <objects>
+                <viewController id="NtP-Rs-MCx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KBf-O7-eHL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pP1-f5-y24"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="IconHome" selectedImage="HighlightedIconHome" id="1a7-12-724" customClass="TabBarItem" customModule="ParentsJournal" customModuleProvider="target"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOA-kz-9ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="-649"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="9Vv-pb-3KF">
+            <objects>
+                <tabBarController storyboardIdentifier="MainViewController" id="pwj-yN-kwf" customClass="MainViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="SoH-iN-ESB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.39621682363013699" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NtP-Rs-MCx" kind="relationship" relationship="viewControllers" id="f0h-gN-xUW"/>
+                        <segue destination="fJf-6x-xit" kind="relationship" relationship="viewControllers" id="Rip-Lr-gOR"/>
+                        <segue destination="Tbp-2P-v67" kind="relationship" relationship="viewControllers" id="9sO-bF-iGF"/>
+                        <segue destination="vTz-Zr-HwR" kind="relationship" relationship="viewControllers" id="W12-lP-Dgf"/>
+                        <segue destination="MXM-vH-zmc" kind="relationship" relationship="viewControllers" id="ce2-R4-paH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMB-Uu-K7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HXK-9p-Dqd">
@@ -369,17 +443,45 @@
                     <navigationItem key="navigationItem" id="co3-t7-TF3"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="navigateToLoginWithSegue" id="5Kh-7T-GbF"/>
+                        <segue destination="pwj-yN-kwf" kind="show" identifier="navigateToMainWithSegue" id="p93-6F-fsi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncq-L3-1aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-342" y="-63"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="c8w-g2-5ty">
+            <objects>
+                <viewController id="vTz-Zr-HwR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dU3-GR-oJn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zRk-fB-fAB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="IconDiscover" selectedImage="HighlightedIconDiscover" id="cRO-R1-h3U" customClass="TabBarItem" customModule="ParentsJournal" customModuleProvider="target"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyE-mI-I52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="942"/>
+        </scene>
     </scenes>
     <resources>
         <image name="FacebookIcon" width="10" height="20"/>
         <image name="GoogleIcon" width="19" height="20"/>
+        <image name="HighlightedIconCalendar" width="24" height="22"/>
+        <image name="HighlightedIconDiscover" width="22" height="22"/>
+        <image name="HighlightedIconHome" width="22" height="22"/>
+        <image name="HighlightedIconProfile" width="24" height="23"/>
         <image name="Icon" width="96" height="96"/>
+        <image name="IconCalendar" width="24" height="22"/>
+        <image name="IconDiscover" width="22" height="22"/>
+        <image name="IconHome" width="22" height="22"/>
+        <image name="IconProfile" width="24" height="23"/>
         <image name="Logo" width="86" height="81"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="p93-6F-fsi"/>
+    </inferredMetricsTieBreakers>
 </document>
