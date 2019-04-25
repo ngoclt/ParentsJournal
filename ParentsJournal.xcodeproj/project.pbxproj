@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C9370F92263CBC90032473A /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9370F82263CBC90032473A /* AuthServices.swift */; };
+		4CD757D92271A11700AD01F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757D82271A11700AD01F1 /* UIColor.swift */; };
 		4CD7DD3D22686C0A007B1302 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */; };
 		4CD7DD3E22686C0A007B1302 /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */; };
 		4CD7DD3F22686C0A007B1302 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */; };
@@ -80,6 +81,7 @@
 		379DFF8E90244F9B7C4BF918 /* Pods-ParentsJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentsJournal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParentsJournal/Pods-ParentsJournal.debug.xcconfig"; sourceTree = "<group>"; };
 		4347A2DFE45C1925AF92DD5E /* Pods-ParentsJournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentsJournalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParentsJournalTests/Pods-ParentsJournalTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C9370F82263CBC90032473A /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		4CD757D82271A11700AD01F1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
 		4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
@@ -102,7 +104,7 @@
 		4CD7DD5122687011007B1302 /* LaunchRouter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4CD7DD5222687011007B1302 /* LaunchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModels.swift; sourceTree = "<group>"; };
 		4CD7DD5322687011007B1302 /* LaunchViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
-		4CD7DD5422687011007B1302 /* LaunchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
+		4CD7DD5422687011007B1302 /* LaunchInteractor.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4CD7DD5B22687179007B1302 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CD7DD5F22687390007B1302 /* GradientView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4CD7DD61226892BE007B1302 /* RoundButton.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -118,12 +120,12 @@
 		4CF47DC92263C76600A076A9 /* ParentsJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParentsJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF47DCD2263C76600A076A9 /* ParentsJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsJournalUITests.swift; sourceTree = "<group>"; };
 		4CF47DCF2263C76600A076A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF47DDB2263C7A700A076A9 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4CF47DDB2263C7A700A076A9 /* LoginPresenter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4CF47DDC2263C7A700A076A9 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		4CF47DDD2263C7A700A076A9 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		4CF47DDE2263C7A700A076A9 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
-		4CF47DDF2263C7A700A076A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4CF47DE02263C7A700A076A9 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		4CF47DDF2263C7A700A076A9 /* LoginViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		4CF47DE02263C7A700A076A9 /* LoginInteractor.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; tabWidth = 2; };
 		4CF47DF62263C86E00A076A9 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		4CF47DF72263C86E00A076A9 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
 		4CF47DF82263C86E00A076A9 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -196,6 +198,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4CD757D72271A10500AD01F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CD757D82271A11700AD01F1 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4CD7DD2A22686C0A007B1302 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +254,7 @@
 		4CD7DD5D2268729D007B1302 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4CD757D72271A10500AD01F1 /* Extensions */,
 				4CD7DD5E22687380007B1302 /* CustomViews */,
 			);
 			path = Utils;
@@ -615,6 +626,7 @@
 				4CF47DE52263C7A700A076A9 /* LoginViewController.swift in Sources */,
 				4CF47DE12263C7A700A076A9 /* LoginPresenter.swift in Sources */,
 				4CD7DD5822687011007B1302 /* LaunchModels.swift in Sources */,
+				4CD757D92271A11700AD01F1 /* UIColor.swift in Sources */,
 				4CF47DAE2263C76100A076A9 /* AppDelegate.swift in Sources */,
 				4CF47DFC2263C86E00A076A9 /* MainPresenter.swift in Sources */,
 				4CD7DD6022687390007B1302 /* GradientView.swift in Sources */,

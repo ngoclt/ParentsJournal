@@ -13,6 +13,6 @@
 import UIKit
 
 class LoginWorker {
-  func doSomeWork() {
+  func login() {
   }
 }

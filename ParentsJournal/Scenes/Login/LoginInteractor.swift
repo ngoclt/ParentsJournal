@@ -13,7 +13,8 @@
 import UIKit
 
 protocol LoginBusinessLogic {
-  func doSomething(request: Login.Something.Request)
+  func setupView()
+  func login(request: Login.Something.Request)
 }
 
 protocol LoginDataStore {
@@ -25,13 +26,15 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
   var worker: LoginWorker?
   //var name: String = ""
   
-  // MARK: Do something
+  func setupView() {
+    presenter?.setupView()
+  }
   
-  func doSomething(request: Login.Something.Request) {
+  func login(request: Login.Something.Request) {
     worker = LoginWorker()
-    worker?.doSomeWork()
+    worker?.login()
     
     let response = Login.Something.Response()
-    presenter?.presentSomething(response: response)
+    presenter?.presentMainScreen(response: response)
   }
 }

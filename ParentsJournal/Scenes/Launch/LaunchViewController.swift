@@ -62,7 +62,9 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    doSomething()
+    setupView()
+    
+    validateSession()
   }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,9 +83,13 @@ class LaunchViewController: UIViewController, LaunchDisplayLogic {
   
   //@IBOutlet weak var nameTextField: UITextField!
   
-  func doSomething() {
+  func setupView() {
+    
+  }
+
+  func validateSession() {
     let request = Launch.Something.Request()
-    interactor?.doSomething(request: request)
+    interactor?.validateSession(request: request)
   }
   
   func displaySomething(viewModel: Launch.Something.ViewModel) {

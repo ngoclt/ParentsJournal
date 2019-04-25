@@ -13,7 +13,7 @@
 import UIKit
 
 protocol LoginDisplayLogic: class {
-  func displaySomething(viewModel: Login.Something.ViewModel)
+  func setupView()
 }
 
 class LoginViewController: UIViewController, LoginDisplayLogic {
@@ -62,19 +62,34 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    doSomething()
+    interactor?.setupView()
   }
   
   // MARK: Do something
   
-  //@IBOutlet weak var nameTextField: UITextField!
+  @IBOutlet weak var gradientView: GradientView!
   
-  func doSomething() {
-    let request = Login.Something.Request()
-    interactor?.doSomething(request: request)
+  @IBAction func didTapButtonFacebookLogin(_ sender: Any) {
   }
   
-  func displaySomething(viewModel: Login.Something.ViewModel) {
-    //nameTextField.text = viewModel.name
+  @IBAction func didTapButtonGoogleLogin(_ sender: Any) {
+  }
+  
+  @IBAction func didTapOnButtonLogin(_ sender: Any) {
+    login()
+  }
+  
+  @IBAction func didTapOnButtonSignUp(_ sender: Any) {
+  }
+  
+  
+  func login() {
+    let request = Login.Something.Request()
+    interactor?.login(request: request)
+  }
+  
+  func setupView() {
+    gradientView.topColor = UIColor(hex: "#FFC86E") ?? .yellow
+    gradientView.bottomColor = UIColor(hex: "#FA508C") ?? .orange
   }
 }

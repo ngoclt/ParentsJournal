@@ -13,16 +13,20 @@
 import UIKit
 
 protocol LoginPresentationLogic {
-  func presentSomething(response: Login.Something.Response)
+  func setupView()
+  func presentMainScreen(response: Login.Something.Response)
 }
 
 class LoginPresenter: LoginPresentationLogic {
   weak var viewController: LoginDisplayLogic?
   
   // MARK: Do something
+
+  func setupView() {
+    viewController?.setupView()
+  }
   
-  func presentSomething(response: Login.Something.Response) {
-    let viewModel = Login.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+  func presentMainScreen(response: Login.Something.Response) {
+    
   }
 }

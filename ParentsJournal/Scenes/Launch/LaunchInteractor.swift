@@ -13,7 +13,7 @@
 import UIKit
 
 protocol LaunchBusinessLogic {
-  func doSomething(request: Launch.Something.Request)
+  func validateSession(request: Launch.Something.Request)
 }
 
 protocol LaunchDataStore {
@@ -27,7 +27,7 @@ class LaunchInteractor: LaunchBusinessLogic, LaunchDataStore {
   
   // MARK: Do something
   
-  func doSomething(request: Launch.Something.Request) {
+  func validateSession(request: Launch.Something.Request) {
     worker = LaunchWorker()
     worker?.doSomeWork()
     
