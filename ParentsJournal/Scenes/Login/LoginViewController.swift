@@ -17,7 +17,7 @@ protocol LoginDisplayLogic: class {
   func openMainScreen()
 }
 
-class LoginViewController: UIViewController, LoginDisplayLogic {
+class LoginViewController: UIViewController {
   var interactor: LoginBusinessLogic?
   var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
 
@@ -69,6 +69,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
   // MARK: Do something
   
   @IBOutlet weak var gradientView: GradientView!
+  @IBOutlet weak var pageControl: UIPageControl!
   
   @IBAction func didTapButtonFacebookLogin(_ sender: Any) {
   }
@@ -88,13 +89,28 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     let request = Login.Something.Request()
     interactor?.login(request: request)
   }
+}
+
+extension LoginViewController: LoginDisplayLogic {
   
   func setupView() {
     gradientView.topColor = UIColor(hex: "#FFC86E") ?? .yellow
     gradientView.bottomColor = UIColor(hex: "#FA508C") ?? .orange
+    
+    pageControl.currentPage = 0
+
   }
   
   func openMainScreen() {
     router?.navigateToMain(segue: nil)
+  }
+}
+
+extension LoginViewController: UIScrollViewDelegate {
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
+    pageControl.currentPage = Int(pageIndex)
+    
   }
 }

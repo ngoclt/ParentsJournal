@@ -285,6 +285,7 @@
                     <navigationItem key="navigationItem" id="WVj-iA-zaK"/>
                     <connections>
                         <outlet property="gradientView" destination="nf1-2G-HXy" id="WCT-9C-mK6"/>
+                        <outlet property="pageControl" destination="iOe-C4-Efb" id="mds-Is-sSb"/>
                         <segue destination="pwj-yN-kwf" kind="show" identifier="navigateToMainWithSegue" id="N5Z-iI-p47"/>
                     </connections>
                 </viewController>
@@ -482,6 +483,6 @@
         <image name="Logo" width="86" height="81"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p93-6F-fsi"/>
+        <segue reference="N5Z-iI-p47"/>
     </inferredMetricsTieBreakers>
 </document>
