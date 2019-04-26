@@ -84,7 +84,6 @@ class LoginViewController: UIViewController {
   @IBAction func didTapOnButtonSignUp(_ sender: Any) {
   }
   
-  
   func login() {
     let request = Login.Something.Request()
     interactor?.login(request: request)
@@ -98,7 +97,6 @@ extension LoginViewController: LoginDisplayLogic {
     gradientView.bottomColor = UIColor(hex: "#FA508C") ?? .orange
     
     pageControl.currentPage = 0
-
   }
   
   func openMainScreen() {
@@ -111,6 +109,5 @@ extension LoginViewController: UIScrollViewDelegate {
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
     let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
     pageControl.currentPage = Int(pageIndex)
-    
   }
 }

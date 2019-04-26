@@ -16,6 +16,7 @@
 		4CD757E62271EB0D00AD01F1 /* NewPostModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757E02271EB0D00AD01F1 /* NewPostModels.swift */; };
 		4CD757E72271EB0D00AD01F1 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757E12271EB0D00AD01F1 /* NewPostViewController.swift */; };
 		4CD757E82271EB0D00AD01F1 /* NewPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757E22271EB0D00AD01F1 /* NewPostInteractor.swift */; };
+		4CD757EA2273268B00AD01F1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757E92273268B00AD01F1 /* NavigationBar.swift */; };
 		4CD7DD3D22686C0A007B1302 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */; };
 		4CD7DD3E22686C0A007B1302 /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */; };
 		4CD7DD3F22686C0A007B1302 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */; };
@@ -96,6 +97,7 @@
 		4CD757E02271EB0D00AD01F1 /* NewPostModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostModels.swift; sourceTree = "<group>"; };
 		4CD757E12271EB0D00AD01F1 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		4CD757E22271EB0D00AD01F1 /* NewPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostInteractor.swift; sourceTree = "<group>"; };
+		4CD757E92273268B00AD01F1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		4CD7DD2C22686C0A007B1302 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		4CD7DD2D22686C0A007B1302 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
 		4CD7DD2E22686C0A007B1302 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				4CD7DD5F22687390007B1302 /* GradientView.swift */,
 				4CD7DD61226892BE007B1302 /* RoundButton.swift */,
 				4CD757DA2271E8F300AD01F1 /* TabBarItem.swift */,
+				4CD757E92273268B00AD01F1 /* NavigationBar.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				4CF47DE32263C7A700A076A9 /* LoginRouter.swift in Sources */,
 				4CD757E82271EB0D00AD01F1 /* NewPostInteractor.swift in Sources */,
 				4CF47E002263C86E00A076A9 /* MainViewController.swift in Sources */,
+				4CD757EA2273268B00AD01F1 /* NavigationBar.swift in Sources */,
 				4CF47DFD2263C86E00A076A9 /* MainWorker.swift in Sources */,
 				4CF47DE22263C7A700A076A9 /* LoginWorker.swift in Sources */,
 				4CD7DD5A22687011007B1302 /* LaunchInteractor.swift in Sources */,
