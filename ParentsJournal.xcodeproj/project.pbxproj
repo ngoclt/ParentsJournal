@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1B77CE227723B90023BDD3 /* RecentPostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1B77CD227723B90023BDD3 /* RecentPostCollectionViewCell.xib */; };
+		4C1B77D0227723C50023BDD3 /* RecentPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77CF227723C50023BDD3 /* RecentPostCollectionViewCell.swift */; };
+		4C1B77D42277241E0023BDD3 /* UIView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77D32277241E0023BDD3 /* UIView+ReusableView.swift */; };
+		4C1B77DE2277343A0023BDD3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77D82277343A0023BDD3 /* HomePresenter.swift */; };
+		4C1B77DF2277343A0023BDD3 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77D92277343A0023BDD3 /* HomeWorker.swift */; };
+		4C1B77E02277343A0023BDD3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77DA2277343A0023BDD3 /* HomeRouter.swift */; };
+		4C1B77E12277343A0023BDD3 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77DB2277343A0023BDD3 /* HomeModels.swift */; };
+		4C1B77E22277343A0023BDD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77DC2277343A0023BDD3 /* HomeViewController.swift */; };
+		4C1B77E32277343A0023BDD3 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B77DD2277343A0023BDD3 /* HomeInteractor.swift */; };
 		4C9370F92263CBC90032473A /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9370F82263CBC90032473A /* AuthServices.swift */; };
 		4CD757D92271A11700AD01F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757D82271A11700AD01F1 /* UIColor.swift */; };
 		4CD757DB2271E8F300AD01F1 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD757DA2271E8F300AD01F1 /* TabBarItem.swift */; };
@@ -88,6 +97,15 @@
 		2947522A2FF0A2C29351717D /* Pods_ParentsJournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParentsJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		379DFF8E90244F9B7C4BF918 /* Pods-ParentsJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentsJournal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParentsJournal/Pods-ParentsJournal.debug.xcconfig"; sourceTree = "<group>"; };
 		4347A2DFE45C1925AF92DD5E /* Pods-ParentsJournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentsJournalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParentsJournalTests/Pods-ParentsJournalTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C1B77CD227723B90023BDD3 /* RecentPostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentPostCollectionViewCell.xib; sourceTree = "<group>"; };
+		4C1B77CF227723C50023BDD3 /* RecentPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C1B77D32277241E0023BDD3 /* UIView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReusableView.swift"; sourceTree = "<group>"; };
+		4C1B77D82277343A0023BDD3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4C1B77D92277343A0023BDD3 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		4C1B77DA2277343A0023BDD3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		4C1B77DB2277343A0023BDD3 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		4C1B77DC2277343A0023BDD3 /* HomeViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		4C1B77DD2277343A0023BDD3 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		4C9370F82263CBC90032473A /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		4CD757D82271A11700AD01F1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4CD757DA2271E8F300AD01F1 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
@@ -196,9 +214,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4C1B77D7227734250023BDD3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C1B77D82277343A0023BDD3 /* HomePresenter.swift */,
+				4C1B77D92277343A0023BDD3 /* HomeWorker.swift */,
+				4C1B77DA2277343A0023BDD3 /* HomeRouter.swift */,
+				4C1B77DB2277343A0023BDD3 /* HomeModels.swift */,
+				4C1B77DC2277343A0023BDD3 /* HomeViewController.swift */,
+				4C1B77DD2277343A0023BDD3 /* HomeInteractor.swift */,
+				4C1B77CD227723B90023BDD3 /* RecentPostCollectionViewCell.xib */,
+				4C1B77CF227723C50023BDD3 /* RecentPostCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		4C9370F62263CB8B0032473A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4C1B77D7227734250023BDD3 /* Home */,
 				4CD757DC2271EAFB00AD01F1 /* NewPost */,
 				4CD7DD4E22686FFD007B1302 /* Launch */,
 				4CF47DF52263C86100A076A9 /* Main */,
@@ -219,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				4CD757D82271A11700AD01F1 /* UIColor.swift */,
+				4C1B77D32277241E0023BDD3 /* UIView+ReusableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -518,6 +553,7 @@
 				4CD7DD4722686C0A007B1302 /* Ubuntu-MI.ttf in Resources */,
 				4CD7DD4A22686C0A007B1302 /* Ubuntu-B.ttf in Resources */,
 				4CD7DD4622686C0A007B1302 /* Quicksand-Regular.ttf in Resources */,
+				4C1B77CE227723B90023BDD3 /* RecentPostCollectionViewCell.xib in Resources */,
 				4CD7DD4C22686C0A007B1302 /* Ubuntu-C.ttf in Resources */,
 				4CD7DD3F22686C0A007B1302 /* SFUIText-Regular.ttf in Resources */,
 				4CD7DD4322686C0A007B1302 /* Ubuntu-L.ttf in Resources */,
@@ -649,15 +685,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD7DD5722687011007B1302 /* LaunchRouter.swift in Sources */,
+				4C1B77D42277241E0023BDD3 /* UIView+ReusableView.swift in Sources */,
 				4C9370F92263CBC90032473A /* AuthServices.swift in Sources */,
 				4CF47DFF2263C86E00A076A9 /* MainModels.swift in Sources */,
 				4CD7DD5622687011007B1302 /* LaunchWorker.swift in Sources */,
 				4CD7DD62226892BE007B1302 /* RoundButton.swift in Sources */,
 				4CF47DFE2263C86E00A076A9 /* MainRouter.swift in Sources */,
 				4CD757E52271EB0D00AD01F1 /* NewPostRouter.swift in Sources */,
+				4C1B77DF2277343A0023BDD3 /* HomeWorker.swift in Sources */,
 				4CD757DB2271E8F300AD01F1 /* TabBarItem.swift in Sources */,
 				4CD7DD5522687011007B1302 /* LaunchPresenter.swift in Sources */,
 				4CD757E42271EB0D00AD01F1 /* NewPostWorker.swift in Sources */,
+				4C1B77DE2277343A0023BDD3 /* HomePresenter.swift in Sources */,
 				4CD757E32271EB0D00AD01F1 /* NewPostPresenter.swift in Sources */,
 				4CF47DE52263C7A700A076A9 /* LoginViewController.swift in Sources */,
 				4CD757E72271EB0D00AD01F1 /* NewPostViewController.swift in Sources */,
@@ -666,19 +705,24 @@
 				4CD757D92271A11700AD01F1 /* UIColor.swift in Sources */,
 				4CF47DAE2263C76100A076A9 /* AppDelegate.swift in Sources */,
 				4CF47DFC2263C86E00A076A9 /* MainPresenter.swift in Sources */,
+				4C1B77E22277343A0023BDD3 /* HomeViewController.swift in Sources */,
 				4CD7DD6022687390007B1302 /* GradientView.swift in Sources */,
 				4CD757E62271EB0D00AD01F1 /* NewPostModels.swift in Sources */,
 				4CF47DE62263C7A700A076A9 /* LoginInteractor.swift in Sources */,
 				4CF47E012263C86E00A076A9 /* MainInteractor.swift in Sources */,
+				4C1B77E02277343A0023BDD3 /* HomeRouter.swift in Sources */,
 				4CD7DD5922687011007B1302 /* LaunchViewController.swift in Sources */,
+				4C1B77D0227723C50023BDD3 /* RecentPostCollectionViewCell.swift in Sources */,
 				4CF47DE42263C7A700A076A9 /* LoginModels.swift in Sources */,
 				4CF47DE32263C7A700A076A9 /* LoginRouter.swift in Sources */,
 				4CD757E82271EB0D00AD01F1 /* NewPostInteractor.swift in Sources */,
 				4CF47E002263C86E00A076A9 /* MainViewController.swift in Sources */,
+				4C1B77E32277343A0023BDD3 /* HomeInteractor.swift in Sources */,
 				4CD757EA2273268B00AD01F1 /* NavigationBar.swift in Sources */,
 				4CF47DFD2263C86E00A076A9 /* MainWorker.swift in Sources */,
 				4CF47DE22263C7A700A076A9 /* LoginWorker.swift in Sources */,
 				4CD7DD5A22687011007B1302 /* LaunchInteractor.swift in Sources */,
+				4C1B77E12277343A0023BDD3 /* HomeModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

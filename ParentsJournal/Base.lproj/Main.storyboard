@@ -343,10 +343,10 @@
             </objects>
             <point key="canvasLocation" x="2726" y="942"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="L1s-mI-UFa">
             <objects>
-                <viewController id="NtP-Rs-MCx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="NtP-Rs-MCx" customClass="HomeViewController" customModule="ParentsJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KBf-O7-eHL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -572,6 +572,9 @@ to each day.</string>
                         <viewLayoutGuide key="safeArea" id="pP1-f5-y24"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="IconHome" selectedImage="HighlightedIconHome" id="1a7-12-724" customClass="TabBarItem" customModule="ParentsJournal" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="collectionView" destination="fNJ-Uy-LNf" id="Xv6-EA-Gsc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOA-kz-9ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
